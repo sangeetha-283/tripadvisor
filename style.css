@@ -1,0 +1,323 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+
+  font-family: "Roboto", sans-serif;
+  color: #103820;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+/*Navigation bar*/
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  position: sticky;
+  background-color: white;
+  top: 0;
+
+}
+
+.navbar__s2 img {
+  width: 200px;
+
+}
+
+.navbar__s3,
+.navbar__s4 {
+  padding: 10px;
+  justify-content: space-between;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.navbar__s3 p,
+.navbar__s4 p {
+  display: flex;
+  gap: 20px;
+  border-radius: 20px;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.navbar__s3 p:hover,
+.navbar__s4 p:hover {
+  background-color: #e6e0e0;
+
+}
+
+.navbar__s5 {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.navbar__s5,
+.navbar__s1 {
+  display: flex;
+  margin-left: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+
+/*where to*/
+.navbar2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bolder;
+  margin-top: 10px;
+}
+
+/*Search*/
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+  margin-bottom: 50px;
+  padding: 10px;
+  padding-left: 10px;
+  border: solid #f7f7f7 3px;
+  border-radius: 30px;
+}
+
+.search input {
+  border: none;
+  width: 100%;
+  font-size: 16px;
+}
+.search input:focus {
+  outline: none;
+  }
+.search button{
+  background-color: #00D352;
+  color: #005330;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+/*Categories*/
+.categories {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  margin: 10px;
+  justify-content: center;
+}
+
+.categories p {
+  padding: 10px;
+  cursor: pointer;
+  font-size: medium;
+}
+
+.categories p:hover {
+  text-decoration: underline;
+}
+
+/*section*/
+.section {
+  display: flex;
+  justify-content: center;
+}
+
+.section img {
+  display: flex;
+  max-width: 100%;
+  height: 50%;
+  border-radius: 10px;
+  height: auto;
+}
+
+/*Restuarant*/
+.restuarant {
+  padding-top: 80px;
+}
+
+.restuarant p {
+  padding-top: 10px;
+}
+
+.restuarant__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.restuarant__card {
+  flex-grow: 1;
+  flex-basis: 20%;
+  margin: 5px;
+}
+
+.restuarant__card img {
+  width: 100%;
+  height: 50%;
+  border-radius: 5px;
+}
+
+/*Explore*/
+.explore {
+  padding-top: 20px;
+}
+
+.explore p {
+  padding-top: 10px;
+}
+
+.explore__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.explore__card {
+  flex-grow: 1;
+  flex-basis: 20%;
+  margin: 5px;
+}
+
+.explore__card p {
+  font-weight: 500;
+}
+
+.explore__card img {
+  width: 100%;
+  height: 40%;
+  border-radius: 5px;
+}
+
+/*Things to do*/
+.tour {
+  padding-top: 20px;
+}
+
+.tour p {
+  padding-top: 10px;
+}
+
+.tour__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.tour__card {
+  flex-grow: 1;
+  flex-basis: 20%;
+  margin: 5px;
+}
+
+.tour__card p {
+  font-weight: 500;
+}
+
+.tour__card img {
+  width: 100%;
+  height: 40%;
+  border-radius: 5px;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  background-color: #f7f7f7;
+  color: #103820;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  margin: 30px;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+
+.footer__one {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer__one__s1__title,
+.footer__one__s2__title,
+.footer__one__s3__title,
+.footer__one__s4__title,
+.footer__one__s5__title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer__one p {
+  margin: 5px 0;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.footer__one p:hover {
+  text-decoration: underline;
+}
+
+.footer__two {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 20px;
+}
+
+.footer__two img {
+  width: 40px;
+  height: 40px;
+}
+
+@media screen and (min-width:600px) {
+
+  .navbar__s1,
+  .navbar__s5 {
+    display: none;
+  }
+}
+
+@media screen and (max-width:600px) {
+
+  .navbar__s3,
+  .navbar__s4 {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .restuarant__card,
+  .tour__card,
+  .explore__card {
+    flex-basis: 40%;
+  }
+
+  .categories {
+    display: none;
+  }
+
+}
